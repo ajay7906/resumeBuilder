@@ -1,0 +1,40 @@
+ai-resume-builder/  
+├── client/                  # Frontend (React.js)  
+│   ├── public/              # Static files (favicon, index.html)  
+│   ├── src/  
+│   │   ├── assets/          # Images, icons, fonts  
+│   │   ├── components/      # Reusable UI components  
+│   │   │   ├── Auth/        # Login/Signup forms  
+│   │   │   ├── Resume/      # Resume form, preview, PDF export  
+│   │   │   ├── AI/          # AI suggestion button, modal  
+│   │   │   └── Shared/      # Navbar, Footer, Loader  
+│   │   ├── pages/           # Main pages  
+│   │   │   ├── Dashboard.js # List saved resumes  
+│   │   │   ├── Editor.js    # Resume form + AI tools  
+│   │   │   └── Auth.js      # Login/Signup  
+│   │   ├── styles/          # Global CSS/Tailwind config  
+│   │   ├── utils/           # Helpers (API calls, auth)  
+│   │   ├── App.js           # Main App router  
+│   │   └── index.js         # React entry point  
+│   └── package.json  
+│  
+├── server/                  # Backend (Node.js + Express)  
+│   ├── config/  
+│   │   ├── db.js            # MongoDB connection  
+│   │   └── auth.js          # JWT middleware  
+│   ├── controllers/         # Logic for routes  
+│   │   ├── authController.js  
+│   │   ├── resumeController.js  
+│   │   └── aiController.js  # OpenAI API calls  
+│   ├── models/              # MongoDB schemas  
+│   │   ├── User.js          # User model  
+│   │   └── Resume.js        # Resume model  
+│   ├── routes/              # API endpoints  
+│   │   ├── authRoutes.js  
+│   │   ├── resumeRoutes.js  
+│   │   └── aiRoutes.js  
+│   ├── .env                 # API keys (OpenAI, MongoDB)  
+│   ├── server.js            # Express app entry  
+│   └── package.json  
+│  
+└── README.md                # Project docs
