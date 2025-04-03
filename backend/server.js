@@ -11,7 +11,7 @@ const dotenv = require('dotenv');
 const connectDb = require('./db/db')
 dotenv.config();
 //import dotenv 
-//call db connetion file
+
 connectDb();
 
 
