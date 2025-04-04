@@ -299,4 +299,4 @@ const refreshToken = async (req, res) => {
   }
 }
 
-module.exports = { register, login, logout };
+module.exports = { register, login, logout , refreshToken};
