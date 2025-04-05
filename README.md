@@ -146,6 +146,6 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 ## Contact
 
-Your Name - your.email@example.com
+Ajay Kumar - aks969014@gmail.com
 
 Project Link: [https://github.com/yourusername/ai-resume-builder](https://github.com/yourusername/ai-resume-builder) 
