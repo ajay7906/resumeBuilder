@@ -156,6 +156,7 @@ const generateTokens = (userId) => {
 
 const register = async (req, res) => {
   try {
+    console.log(req.body);
     const user = await User.create(req.body);
     const { accessToken, refreshToken } = generateTokens(user._id);
     
@@ -191,7 +192,7 @@ const login = async (req, res) => {
       return res.status(423).json({ error: 'Account temporarily locked' });
     }
     
-    if (!user || !(await user.comparePassword(password))) {
+    if (!user || !(await user.compareParePassword(password))) {
       // Increment failed attempts
       await User.findByIdAndUpdate(user?._id, {
         $inc: { loginAttempts: 1 },

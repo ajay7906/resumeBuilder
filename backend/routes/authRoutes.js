@@ -13,10 +13,10 @@ const authLimiter = rateLimit({
 })
 
 // example route
-router.post('/api/auth/register', authLimiter, register);
-router.post('/api/auth/login', authLimiter, login);
-router.post('/api/auth/refresh', authLimiter, refreshToken);
-router.post('/api/auth/logout', authLimiter, logout);
+router.post('/register', authLimiter, register);
+router.post('/login', authLimiter, login);
+router.post('/refresh', authLimiter, refreshToken);
+router.post('/logout', authLimiter, logout);
 // router.post('/api/auth/forgot-password', authLimiter, forgotPassword);
 // router.post('/api/auth/reset-password', authLimiter, resetPassword);
 // router.post('/api/auth/verify-email', authLimiter, verifyEmail);

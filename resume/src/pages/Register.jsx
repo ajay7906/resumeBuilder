@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
 
 export default function Register() {
@@ -99,9 +99,9 @@ export default function Register() {
         </form>
         <div className="text-center text-sm">
           <span className="text-gray-600">Already have an account? </span>
-          <a href="/login" className="font-medium text-primary-600 hover:text-primary-500">
+          <Link to="/login" className="font-medium text-primary-600 hover:text-primary-500">
             Sign in
-          </a>
+          </Link>
         </div>
       </div>
     </div>
